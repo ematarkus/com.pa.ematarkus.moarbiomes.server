@@ -6,10 +6,7 @@
   ],
   "context": "server",
   "companions": [
-    "com.pa.ematarkus.moarbiomes.common"
-  ],
-  "dependencies": [
-    "com.pa.ematarkus.moarbiomes.common"
+    "com.pa.ematarkus.moarbiomes.client"
   ],
   "date": "2018/09/14",
   "forum": "https://forums.planetaryannihilation.com/threads/ematarkus-biomes.73139/",
@@ -19,5 +16,5 @@
   "scenes": {},
   "signature": "(not yet implemented)",
   "titansOnly": true,
-  "version": "0.7.1"
+  "version": "0.7.2"
 }
