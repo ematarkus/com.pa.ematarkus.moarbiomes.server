@@ -1,0 +1,22 @@
+{
+  "author": "Ematarkus",
+  "category": [
+    "titans",
+    "biomes"
+  ],
+  "context": "server",
+  "companions": [
+    "com.pa.ematarkus.moarbiomes.common"
+  ],
+  "dependencies": [
+    "com.pa.ematarkus.moarbiomes.common"
+  ],
+  "date": "2018/07/20",
+  "description": "This Server-Mod contains many new biome and terrain variations for new impressions and even a bit more gameplay variety.",
+  "display_name": "Ematarkus Biome Collection",
+  "identifier": "com.pa.ematarkus.moarbiomes.server",
+  "scenes": {},
+  "signature": "(not yet implemented)",
+  "titansOnly": true,
+  "version": "0.7"
+}
