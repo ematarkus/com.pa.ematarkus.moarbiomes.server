@@ -8,7 +8,10 @@
   "companions": [
     "com.pa.ematarkus.moarbiomes.client"
   ],
-  "date": "2018/09/14",
+  "dependencies": [
+        "com.pa.ematarkus.moarbiomes.client"
+  ],
+  "date": "2018/09/15",
   "forum": "https://forums.planetaryannihilation.com/threads/ematarkus-biomes.73139/",
   "description": "This Server-Mod contains many new biome and terrain variations for new impressions and even a bit more gameplay variety.",
   "display_name": "Ematarkus Biome Collection",
@@ -16,5 +19,5 @@
   "scenes": {},
   "signature": "(not yet implemented)",
   "titansOnly": true,
-  "version": "0.7.3"
+  "version": "0.7.4"
 }
