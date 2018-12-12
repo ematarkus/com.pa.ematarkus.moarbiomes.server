@@ -5,6 +5,24 @@
     "base_biome":"/pa/terrain/base/base.json",
     "biomes":[
         {
+            "spec":"/pa/terrain/sand/sand.json",
+            "temperature":[
+                null,
+                null,
+                null
+            ],
+            "elevation":[
+                -20.0,
+                10.0,
+                1
+            ],
+            "water_distance":[
+                -10000,
+                -50,
+                1
+            ]
+        },
+        {
             "spec":"/pa/terrain/grass/grass.json",
             "temperature":[
                 null,
@@ -17,7 +35,7 @@
                 1
             ],
             "water_distance":[
-                null,
+                -100,
                 100,
                 1
             ]
@@ -35,7 +53,7 @@
                 1.1
             ],
             "water_distance":[
-                800,
+                150,
                 null,
                 1
             ]

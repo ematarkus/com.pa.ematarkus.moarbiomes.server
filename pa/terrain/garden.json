@@ -4,6 +4,24 @@
     "enable_features":true,
     "base_biome":"/pa/terrain/base/base.json",
     "biomes":[
+            {
+            "spec":"/pa/terrain/sand/sand.json",
+            "temperature":[
+                null,
+                null,
+                null
+            ],
+            "elevation":[
+                -200,
+                50,
+                null
+            ],
+            "water_distance":[
+                -200,
+                -100,
+                5
+            ]
+        },
         {
             "spec":"/pa/terrain/ice/ice.json",
             "temperature":[
@@ -17,7 +35,7 @@
                 null
             ],
             "water_distance":[
-                -400,
+                null,
                 -100,
                 5
             ]
