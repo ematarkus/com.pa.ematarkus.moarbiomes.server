@@ -1,5 +1,5 @@
 {
-    "name":"earth-lava-metal",
+    "name":"earth_lava_metal",
     "ambient_sound":"/SE/Ambience/Amb_Planet_Earth",
     "enable_features":true,
     "base_biome":"/pa/terrain/base/base.json",
