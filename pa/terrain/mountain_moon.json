@@ -1,10 +1,10 @@
 {
-    "name":"green_moon",
+    "name":"mountain_moon",
     "ambient_sound":"/SE/Ambience/Amb_Planet_Earth",
     "enable_features":true,
     "base_biome":"/pa/terrain/base/base.json",
     "biomes":[
-        {
+            {
             "spec":"/pa/terrain/moon/moon.json",
             "temperature":[
                 null,
@@ -30,9 +30,9 @@
                 null
             ],
             "elevation":[
-                null,
-                null,
-                null
+                0,
+                0.6,
+                0.6
             ],
             "water_distance":[
                 200,
@@ -41,29 +41,29 @@
             ]
         },
         {
-            "spec":"/pa/terrain/grass/icy_plain_grass.json",
+            "spec":"/pa/terrain/mountain/mountain.json",
             "temperature":[
-                0,
-                0.1,
-                0.2
+                null,
+                null,
+                null
             ],
             "elevation":[
-                0.0,
-                0.8,
-                0.2
+                0.5,
+                1,
+                1
             ],
             "water_distance":[
-                -50,
-                100,
-                1
+                null,
+                null,
+                null
             ]
         },
-                {
-            "spec":"/pa/terrain/grass/plain_grass.json",
+        {
+            "spec":"/pa/terrain/mountain/mountain.json",
             "temperature":[
-                0.4,
-                1,
-                0.3
+                null,
+                null,
+                null
             ],
             "elevation":[
                 null,
@@ -73,11 +73,29 @@
             "water_distance":[
                 -50,
                 100,
-                1
+                0.7
+            ]
+        },
+                {
+            "spec":"/pa/terrain/mountain/mountain.json",
+            "temperature":[
+                null,
+                null,
+                null
+            ],
+            "elevation":[
+                null,
+                null,
+                null
+            ],
+            "water_distance":[
+                100,
+                -50,
+                0.7
             ]
         },
         {
-            "spec":"/pa/terrain/sand/sand.json",
+            "spec":"/pa/terrain/sand/sand_darkstones.json",
             "temperature":[
                 null,
                 null,

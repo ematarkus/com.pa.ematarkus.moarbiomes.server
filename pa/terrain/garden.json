@@ -4,7 +4,7 @@
     "enable_features":true,
     "base_biome":"/pa/terrain/base/base.json",
     "biomes":[
-            {
+        {
             "spec":"/pa/terrain/sand/sand.json",
             "temperature":[
                 null,
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "spec":"/pa/terrain/grass/grass.json",
+            "spec":"/pa/terrain/grass/plain_grass.json",
             "temperature":[
                 null,
                 null,

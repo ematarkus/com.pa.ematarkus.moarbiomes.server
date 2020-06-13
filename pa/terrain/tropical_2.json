@@ -1,0 +1,162 @@
+{
+    "name": "tropical_2",
+    "ambient_sound": "/SE/Ambience/Amb_Planet_Tropical",
+    "biomes": [
+        {
+            "spec": "/pa/terrain/sand/sand_green.json",
+            "temperature": [
+                0,
+                1,
+                1
+            ],
+            "elevation": [
+                null,
+                0.15,
+                1
+            ],
+            "water_distance": [
+                null,
+                300,
+                1
+            ]
+        },
+        {
+            "spec": "/pa/terrain/jungle/jungle.json",
+            "temperature": [
+                0.2,
+                1,
+                1
+            ],
+            "elevation": [
+                0,
+                1,
+                1
+            ],
+            "water_distance": [
+                50,
+                null,
+                1
+            ]
+        },
+        {
+            "spec": "/pa/terrain/ice/ice.json",
+            "temperature": [
+                -1,
+                -0.5,
+                3
+            ],
+            "elevation": [
+                -1,
+                0.6,
+                0
+            ],
+            "water_distance": [
+                null,
+                10000,
+                0
+            ]
+        },
+        {
+            "spec": "/pa/terrain/mountain/mountain.json",
+            "temperature": [
+                -1,
+                1,
+                0.5
+            ],
+            "elevation": [
+                0.4,
+                1,
+                2.5
+            ],
+            "water_distance": [
+                0,
+                null,
+                0.5
+            ]
+        },
+        {
+            "spec": "/pa/terrain/grass/grass.json",
+            "temperature": [
+                -0.7,
+                0.8,
+                1
+            ],
+            "elevation": [
+                0.2,
+                0.5,
+                0.5
+            ],
+            "water_distance": [
+                30,
+                null,
+                1
+            ]
+        }
+    ],
+    "base_biome": "/pa/terrain/base/base.json",
+    "enable_features": true,
+    "atmosphere": {
+        "color": [
+            0.1,
+            0.25,
+            0.45,
+            0.5
+        ],
+        "hdr_intensity": 2,
+        "ldr_intensity": 1,
+        "density": 15
+    },
+    "lighting": {
+        "sun": {
+            "diffuse": [
+                0.8,
+                0.7,
+                0.4
+            ],
+            "specular": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "hdr_intensity": 10,
+            "ldr_intensity": 4
+        },
+        "ambient": {
+            "hdr_intensity": 1,
+            "ldr_intensity": 1,
+            "day_intensity_hdr": 1,
+            "day_intensity_ldr": 1.3,
+            "day_sky": [
+                0.6,
+                0.7,
+                1
+            ],
+            "day_ground": [
+                0.2,
+                0.2,
+                0.4
+            ],
+            "night_intensity_hdr": 1,
+            "night_intensity_ldr": 1.3,
+            "night_sky": [
+                0.4,
+                0.5,
+                1
+            ],
+            "night_ground": [
+                0.2,
+                0.2,
+                0.4
+            ]
+        }
+    },
+    "water": {
+        "shader": "planet_liquid_transparent",
+        "textures": {
+            "DiffuseTexture": "/pa/effects/textures/water_diffuse.papa",
+            "NormalTexture": "/pa/effects/textures/water_normal.papa",
+            "DepthColorTexture": "/pa/effects/textures/water_depth_diffuse.papa",
+            "NoiseTexture": "/pa/effects/textures/CloudNoise.papa"
+        }
+    }
+}

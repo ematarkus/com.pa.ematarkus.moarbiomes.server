@@ -1,0 +1,2017 @@
+{
+    "name": "grass",
+    "color": [
+        0.34,
+        0.34,
+        0.14,
+        1
+    ],
+    "base_texture": "/pa/terrain/grass/textures/base/grass_tile_diffuse.papa",
+    "normal_texture": "/pa/terrain/grass/textures/base/grass_tile_normal.papa",
+    "layers": [
+        {
+            "note": "0",
+            "disable": true
+        },
+        {
+            "note": "1",
+            "noise": {
+                "scale": 2,
+                "zoom": 15,
+                "type": "simplex"
+            }
+        },
+        {
+            "note": "2",
+            "disable": false,
+            "noise": {
+                "scale": 2,
+                "zoom": 10,
+                "type": "simplex"
+            },
+            "inherit_weight": true
+        },
+        {
+            "note": "3",
+            "noise": {
+                "scale": 10,
+                "zoom": 2,
+                "type": "simplex"
+            }
+        },
+        {
+            "note": "4",
+            "inherit_noise": true
+        },
+        {
+            "note": "5",
+            "inherit_noise": true
+        },
+        {
+            "note": "6",
+            "inherit_noise": true
+        },
+        {
+            "note": "7",
+            "inherit_noise": true
+        },
+        {
+            "note": "8",
+            "inherit_noise": true
+        },
+        {
+            "note": "9",
+            "inherit_noise": true
+        },
+        {
+            "note": "10",
+            "inherit_noise": true
+        },
+        {
+            "note": "11",
+            "inherit_noise": true
+        },
+        {
+            "note": "12",
+            "inherit_noise": true
+        },
+        {
+            "note": "13",
+            "inherit_noise": true
+        },
+        {
+            "note": "14",
+            "inherit_noise": true
+        },
+        {
+            "note": "15",
+            "inherit_noise": true
+        },
+        {
+            "note": "16",
+            "inherit_noise": true
+        },
+        {
+            "note": "17",
+            "inherit_noise": true
+        },
+        {
+            "note": "18",
+            "inherit_noise": true
+        },
+        {
+            "note": "19",
+            "inherit_noise": true
+        },
+        {
+            "note": "20",
+            "inherit_noise": true
+        },
+        {
+            "note": "21",
+            "inherit_noise": true
+        },
+        {
+            "note": "22",
+            "inherit_noise": true
+        },
+        {
+            "note": "23",
+            "inherit_noise": true
+        },
+        {
+            "note": "24",
+            "inherit_noise": true
+        }
+    ],
+    "brushes": [
+    {
+            "group": "basic",
+            "layer": 9,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_plateau_01.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "noise_range": [
+                0.5,
+                0.52
+            ],
+            "biome_distance_range": [
+                40,
+                null
+            ],
+            "threshold": 1,
+            "weight": 1,
+            "bias": 1,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "scale_variation": 0.3
+        },
+        {
+            "group": "basic",
+            "layer": 9,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_volcano_06.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "noise_range": [
+                0.38,
+                0.4
+            ],
+            "biome_distance_range": [
+                70,
+                null
+            ],
+            "threshold": 1,
+            "weight": 1,
+            "bias": 2,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "scale_variation": 0
+        },
+        {
+            "group": "basic",
+            "layer": 9,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_plateau_06.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "noise_range": [
+                0.39,
+                0.4
+            ],
+            "biome_distance_range": [
+                70,
+                null
+            ],
+            "threshold": 1,
+            "weight": 1,
+            "bias": 1,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "scale_variation": 0
+        },
+        {
+            "group": "basic",
+            "layer": 9,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_crack_01.json",
+            "op": "BO_Subtract",
+            "proj": "BP_Bend",
+            "noise_range": [
+                0.7,
+                0.71
+            ],
+            "biome_distance_range": [
+                200,
+                null
+            ],
+            "threshold": 0,
+            "weight": 1,
+            "weight_scale": 5,
+            "bias": 1,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "scale_variation": 0
+        },
+        {
+            "group": "basic",
+            "note": "(Landmark - occurs only once on a planet, set to layer 3)",
+            "layer": 3,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_temple.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "noise_range": [
+                0.2,
+                0.4
+            ],
+            "biome_distance_range": [
+                160,
+                null
+            ],
+            "threshold": 0,
+            "weight": 1,
+            "bias": 1,
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "max_instances": 1,
+            "planet_size_range": [
+                400,
+                1000
+            ],
+            "elevation_range": [
+                0,
+                0.2
+            ]
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_large_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_large_3_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_large_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_large_8_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t1_pit_2_ramp.json",
+            "op": "BO_Subtract",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_large_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_large_bend.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_large_long.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_medium_bend.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_medium_long.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_medium_wide_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_small_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t2_small_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_small.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_small_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_small_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_small_2x_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "organic",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_t3_small_3_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_large_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_large_3_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_large_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_large_8_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t1_pit_2_ramp.json",
+            "op": "BO_Subtract",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_large_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_large_bend.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_large_long.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_3_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_bend.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_long.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_medium_wide_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_small_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t2_small_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_medium_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_medium_4_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_small.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 0,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_small_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_small_2_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_small_3_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        },
+        {
+            "group": "structural",
+            "layer": 7,
+            "brush_spec": "/pa/terrain/jungle/brushes/jungle_metal_t3_small_2x_1_ramp.json",
+            "op": "BO_Add",
+            "proj": "BP_Bend",
+            "planet_size_range": [
+                10,
+                20
+            ],
+            "required_content": "PAExpansion1"
+        }
+    ],
+    "features": [
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 15,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 15,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "biome_distance_range": [
+                20,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_palm_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 10,
+            "noise_range": [
+                0.4,
+                0.6
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "biome_distance_range": [
+                6,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.6
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 11,
+            "op": "BO_Add",
+            "noise_range": [
+                0.35,
+                0.65
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "biome_distance_range": [
+                4,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.5
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 12,
+            "op": "BO_Add",
+            "noise_range": [
+                0.3,
+                0.7
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "biome_distance_range": [
+                2,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.4
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 13,
+            "noise_range": [
+                0.25,
+                0.75
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "biome_distance_range": [
+                1,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.3
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 14,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "elevation_range": [
+                -1,
+                0.2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 15,
+            "noise_range": [
+                0.1,
+                0.9
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                1,
+                3
+            ],
+            "elevation_range": [
+                -1,
+                0.1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_tree_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                4
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 13,
+            "noise_range": [
+                0.3,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "biome_distance_range": [
+                40,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.8
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.1,
+                0.9
+            ],
+            "cluster_size": 5,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.1,
+                0.9
+            ],
+            "cluster_size": 6,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 8,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 9,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 11,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_07.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 12,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_08.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 13,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_09.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 8,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 9,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 11,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 12,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_spike_plant_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 6,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_01.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_02.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 8,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_03.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 9,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_04.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_05.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 11,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_06.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 12,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_07.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 13,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_08.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 14,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_09.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 15,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_10.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 16,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_11.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 17,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_12.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.5,
+                0.52
+            ],
+            "cluster_size": 8,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                40,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_rock_13.json",
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        }
+    ],
+    "decals": [
+        {
+            "layer": 8,
+            "bias": 100,
+            "noise_range": [
+                0,
+                1
+            ],
+            "pos_range": [
+                0,
+                0
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "scale": [
+                40,
+                40,
+                1
+            ],
+            "scale_variation": 0,
+            "count": 1,
+            "material_spec": "/pa/terrain/grass/decals/grass_decal_01.json"
+        },
+        {
+            "layer": 9,
+            "bias": 200,
+            "noise_range": [
+                0,
+                1
+            ],
+            "pos_range": [
+                0.2,
+                0.2
+            ],
+            "biome_distance_range": [
+                0,
+                5
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "scale": [
+                60,
+                60,
+                1
+            ],
+            "scale_variation": 0.2,
+            "count": 1,
+            "material_spec": "/pa/terrain/grass/decals/grass_decal_02.json"
+        },
+        {
+            "layer": 10,
+            "bias": 200,
+            "noise_range": [
+                0.4,
+                0.5
+            ],
+            "pos_range": [
+                0,
+                0
+            ],
+            "biome_distance_range": [
+                70,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "scale": [
+                60,
+                60,
+                1
+            ],
+            "scale_variation": 0,
+            "count": 1,
+            "material_spec": "/pa/terrain/grass/decals/grass_decal_03.json"
+        },
+        {
+            "layer": 11,
+            "bias": 300,
+            "noise_range": [
+                0,
+                1
+            ],
+            "pos_range": [
+                0,
+                0
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "water_distance_range": [
+                -100,
+                -60
+            ],
+            "scale": [
+                50,
+                50,
+                1
+            ],
+            "scale_variation": 0,
+            "count": 1,
+            "material_spec": "/pa/terrain/grass/decals/grass_decal_water_01.json"
+        },
+        {
+            "layer": 12,
+            "bias": 300,
+            "noise_range": [
+                0,
+                1
+            ],
+            "pos_range": [
+                0,
+                0
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "water_distance_range": [
+                null,
+                -100
+            ],
+            "scale": [
+                50,
+                50,
+                1
+            ],
+            "scale_variation": 0,
+            "count": 1,
+            "material_spec": "/pa/terrain/grass/decals/grass_decal_water_02.json"
+        }
+    ]
+}

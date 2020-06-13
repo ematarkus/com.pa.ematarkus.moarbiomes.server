@@ -1,97 +1,115 @@
 {
-    "name":"green_moon",
+    "name":"glowstone",
     "ambient_sound":"/SE/Ambience/Amb_Planet_Earth",
     "enable_features":true,
     "base_biome":"/pa/terrain/base/base.json",
     "biomes":[
         {
-            "spec":"/pa/terrain/moon/moon.json",
+            "spec":"/pa/terrain/lava/lava.json",
             "temperature":[
-                null,
-                null,
-                null
-            ],
-            "elevation":[
-                null,
-                null,
-                null
-            ],
-            "water_distance":[
-                300,
-                900,
-                1
-            ]
-        },
-        {
-            "spec":"/pa/terrain/moon/moon.json",
-            "temperature":[
-                null,
-                null,
-                null
-            ],
-            "elevation":[
-                null,
-                null,
-                null
-            ],
-            "water_distance":[
-                200,
-                400,
-                1
-            ]
-        },
-        {
-            "spec":"/pa/terrain/grass/icy_plain_grass.json",
-            "temperature":[
-                0,
-                0.1,
-                0.2
-            ],
-            "elevation":[
-                0.0,
-                0.8,
-                0.2
-            ],
-            "water_distance":[
-                -50,
-                100,
-                1
-            ]
-        },
-                {
-            "spec":"/pa/terrain/grass/plain_grass.json",
-            "temperature":[
-                0.4,
+                0.5,
                 1,
-                0.3
+                1
             ],
             "elevation":[
+                0,
+                0.5,
+                1
+            ],
+            "water_distance":[
                 null,
                 null,
                 null
-            ],
-            "water_distance":[
-                -50,
-                100,
-                1
             ]
         },
         {
             "spec":"/pa/terrain/sand/sand.json",
             "temperature":[
-                null,
-                null,
-                null
+                0,
+                1,
+                0.7
             ],
             "elevation":[
+                0,
+                0.1,
+                0.1
+            ],
+            "water_distance":[
+                0,
+                0.3,
+                1
+            ]
+        },
+        {
+            "spec":"/pa/terrain/grass/plain_grass.json",
+            "temperature":[
+                0,
+                1,
+                0.7
+            ],
+            "elevation":[
+                0.2,
+                1,
+                0.4
+            ],
+            "water_distance":[
+                0,
+                0.3,
+                1
+            ]
+        },
+                {
+            "spec":"/pa/terrain/jungle/jungle.json",
+            "temperature":[
+                0.8,
+                1,
+                0.7
+            ],
+            "elevation":[
+                0.2,
+                1,
+                0.3
+            ],
+            "water_distance":[
+                0,
+                0.3,
+                1
+            ]
+        },
+        {
+            "spec":"/pa/terrain/metal/metal.json",
+            "temperature":[
+                0,
+                0.3,
+                1
+            ],
+            "elevation":[
+                0.3,
+                0.6,
+                1
+            ],
+            "water_distance":[
                 null,
                 null,
                 null
+            ]
+        },
+        {
+            "spec":"/pa/terrain/ice/ice.json",
+            "temperature":[
+                0,
+                0.3,
+                1
+            ],
+            "elevation":[
+                0.6,
+                1,
+                1
             ],
             "water_distance":[
-                60,
-                200,
-                1
+                null,
+                null,
+                null
             ]
         }
     ],

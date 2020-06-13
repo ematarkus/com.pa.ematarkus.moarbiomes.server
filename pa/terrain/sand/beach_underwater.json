@@ -1,0 +1,1769 @@
+{
+  "name": "beach_underwater",
+  "color": [
+    0.79,
+    0.69,
+    0.56,
+    1
+  ],
+  "base_texture": "/pa/terrain/desert/textures/base/desert_tile_diffuse.papa",
+  "normal_texture": "/pa/terrain/desert/textures/base/desert_tile_normal.papa",
+  "layers": [
+    {
+        "note": "0",
+        "disable": true
+    },
+    {
+        "note": "1",
+        "noise": {
+            "scale": 2,
+            "zoom": 15,
+            "type": "simplex"
+        }
+    },
+    {
+        "note": "2",
+        "noise": {
+            "scale": 2,
+            "zoom": 10,
+            "type": "simplex"
+        },
+        "inherit_weight": true
+    },
+    {
+        "note": "3",
+        "noise": {
+            "scale": 10,
+            "zoom": 2,
+            "type": "simplex"
+        }
+    },
+    {
+        "note": "4",
+        "inherit_noise": true
+    },
+    {
+        "note": "5",
+        "inherit_noise": true
+    },
+    {
+        "note": "6",
+        "inherit_noise": true
+    },
+    {
+        "note": "7",
+        "inherit_noise": true
+    },
+    {
+        "note": "8",
+        "inherit_noise": true
+    },
+    {
+        "note": "9",
+        "inherit_noise": true
+    },
+    {
+        "note": "10",
+        "inherit_noise": true
+    },
+    {
+        "note": "11",
+        "inherit_noise": true
+    },
+    {
+        "note": "12",
+        "inherit_noise": true
+    },
+    {
+        "note": "13",
+        "inherit_noise": true
+    },
+    {
+        "note": "14",
+        "inherit_noise": true
+    },
+    {
+        "note": "15",
+        "inherit_noise": true
+    },
+    {
+        "note": "16",
+        "inherit_noise": true
+    },
+    {
+        "note": "17",
+        "inherit_noise": true
+    },
+    {
+        "note": "18",
+        "inherit_noise": true
+    },
+    {
+        "note": "19",
+        "inherit_noise": true
+    },
+    {
+        "note": "20",
+        "inherit_noise": true
+    },
+    {
+        "note": "21",
+        "inherit_noise": true
+    },
+    {
+        "note": "22",
+        "inherit_noise": true
+    },
+    {
+        "note": "23",
+        "inherit_noise": true
+    },
+    {
+        "note": "24",
+        "inherit_noise": true
+    },
+    {
+        "note": "25",
+        "inherit_noise": true
+    },
+    {
+        "note": "26",
+        "inherit_noise": true
+    },
+    {
+        "note": "27",
+        "inherit_noise": true
+    },
+    {
+        "note": "28",
+        "inherit_noise": true
+    },
+    {
+        "note": "29",
+        "inherit_noise": true
+    },
+    {
+        "note": "30",
+        "inherit_noise": true
+    },
+    {
+        "note": "31",
+        "inherit_noise": true
+    },
+    {
+        "note": "32",
+        "inherit_noise": true
+    },
+    {
+        "note": "33",
+        "inherit_noise": true
+    },
+    {
+        "note": "34",
+        "inherit_noise": true
+    },
+    {
+        "note": "35",
+        "inherit_noise": true
+    },
+    {
+        "note": "36",
+        "inherit_noise": true
+    },
+    {
+        "note": "37",
+        "inherit_noise": true
+    },
+    {
+        "note": "38",
+        "inherit_noise": true
+    },
+    {
+        "note": "39",
+        "inherit_noise": true
+    },
+    {
+        "note": "40",
+        "inherit_noise": true
+    },
+    {
+        "note": "41",
+        "inherit_noise": true
+    },
+    {
+        "note": "42",
+        "inherit_noise": true
+    },
+    {
+        "note": "43",
+        "inherit_noise": true
+    },
+    {
+        "note": "44",
+        "inherit_noise": true
+    },
+    {
+        "note": "45",
+        "inherit_noise": true
+    },
+    {
+        "note": "46",
+        "inherit_noise": true
+    },
+    {
+        "note": "47",
+        "inherit_noise": true
+    },
+    {
+        "note": "48",
+        "inherit_noise": true
+    },
+    {
+        "note": "49",
+        "inherit_noise": true
+    }
+  ],
+  "brushes": [
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_01.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.8,
+        0.9
+      ],
+      "biome_distance_range": [
+        20,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "scale_variation": 0.25
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_02.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.8,
+        0.9
+      ],
+      "biome_distance_range": [
+        20,
+        null
+      ],
+      "threshold": 0,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "scale_variation": 0.25
+    },
+    {
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_03.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.3,
+        0.7
+      ],
+      "biome_distance_range": [
+        50,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_04.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.3,
+        0.7
+      ],
+      "biome_distance_range": [
+        50,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_05.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.3,
+        0.7
+      ],
+      "biome_distance_range": [
+        50,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_pit_01.json",
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.5,
+        0.7
+      ],
+      "biome_distance_range": [
+        70,
+        null
+      ],
+      "threshold": 0,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "note": "was layer 2",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_pit_02.json",
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.25,
+        0.3
+      ],
+      "biome_distance_range": [
+        60,
+        null
+      ],
+      "threshold": 4,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "scale_variation": 0.3
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_08.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.4,
+        0.6
+      ],
+      "biome_distance_range": [
+        75,
+        null
+      ],
+      "threshold": 0,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_09.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.2,
+        0.4
+      ],
+      "biome_distance_range": [
+        75,
+        null
+      ],
+      "threshold": 0,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_10.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.6,
+        0.7
+      ],
+      "biome_distance_range": [
+        75,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_11.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.4,
+        0.6
+      ],
+      "biome_distance_range": [
+        75,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_plateau_12.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.5,
+        0.7
+      ],
+      "biome_distance_range": [
+        100,
+        null
+      ],
+      "threshold": 1,
+      "weight": 1,
+      "weight_scale": 1,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 1,
+      "noise_range": [
+        0.3,
+        0.32
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_02.json",
+      "planet_size_range": [
+        100,
+        2000
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 1,
+      "noise_range": [
+        0.3,
+        0.32
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_03.json",
+      "planet_size_range": [
+        100,
+        2000
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 1,
+      "noise_range": [
+        0.3,
+        0.32
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_04.json",
+      "planet_size_range": [
+        100,
+        2000
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 1,
+      "noise_range": [
+        0.3,
+        0.32
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_05.json",
+      "planet_size_range": [
+        100,
+        2000
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "layer": 0,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 1,
+      "noise_range": [
+        0.3,
+        0.32
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_06.json",
+      "planet_size_range": [
+        100,
+        2000
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 4,
+      "noise_range": [
+        0.8,
+        0.85
+      ],
+      "biome_distance_range": [
+        100,
+        null
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_08.json",
+      "planet_size_range": [
+        200,
+        null
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "max_instances": 2
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "weight": 2,
+      "weight_hard": true,
+      "threshold": 0,
+      "sample_scale": 1.2,
+      "bias": 3,
+      "noise_range": [
+        0.75,
+        0.8
+      ],
+      "biome_distance_range": [
+        100,
+        null
+      ],
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_crack_09.json",
+      "planet_size_range": [
+        200,
+        null
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "max_instances": 2
+    },
+    {
+      "group": "basic",
+      "layer": 3,
+      "note": "(Landmark - occurs only once on a planet)",
+      "brush_spec": "/pa/terrain/desert/brushes/desert_ruins_01.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "noise_range": [
+        0.8,
+        0.9
+      ],
+      "biome_distance_range": [
+        80,
+        null
+      ],
+      "threshold": 0,
+      "weight_hard": true,
+      "weight": 2,
+      "bias": 1,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "planet_size_range": [
+        600,
+        700
+      ],
+      "elevation_range": [
+        0,
+        0.1
+      ],
+      "max_instances": 1
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_large_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_large_3_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_large_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_large_8_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t1_pit_2_ramp.json",
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_large_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_large_bend.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_large_long.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_medium_bend.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_medium_long.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_medium_wide_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_small_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t2_small_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_small.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_small_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_small_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_small_2x_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "organic",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_t3_small_3_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_large_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_large_3_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_large_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_large_8_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t1_pit_2_ramp.json",
+      "op": "BO_Subtract",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_large_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_large_bend.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_large_long.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_3_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_bend.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_long.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_medium_wide_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_small_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t2_small_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_medium_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_medium_4_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_small.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 0,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_small_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_small_2_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_small_3_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    },
+    {
+      "group": "structural",
+      "layer": 7,
+      "brush_spec": "/pa/terrain/desert/brushes/desert_metal_t3_small_2x_1_ramp.json",
+      "op": "BO_Add",
+      "proj": "BP_Bend",
+      "planet_size_range": [
+        10,
+        20
+      ],
+      "required_content": "PAExpansion1"
+    }
+  ],
+  "features": [
+    {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                4
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_01.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 13,
+            "noise_range": [
+                0.3,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                2
+            ],
+            "biome_distance_range": [
+                40,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                0.8
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_02.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_03.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_04.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_05.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0,
+                1
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                5
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "elevation_range": [
+                -1,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_group_06.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.1,
+                0.9
+            ],
+            "cluster_size": 5,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_01.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.1,
+                0.9
+            ],
+            "cluster_size": 6,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_02.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 7,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_03.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 8,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_04.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 9,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_05.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 10,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_06.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 11,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_07.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.8,
+                0.8
+            ],
+            "cluster_size": 12,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_08.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        },
+        {
+            "layer": 0,
+            "noise_range": [
+                0.2,
+                0.8
+            ],
+            "cluster_size": 13,
+            "cluster_count_range": [
+                0,
+                1
+            ],
+            "biome_distance_range": [
+                25,
+                null
+            ],
+            "feature_spec": "/pa/terrain/jungle/features/jungle_fern_09.json",
+            "scale": [
+                0.8,
+                0.8,
+                1
+            ]
+        }
+  ],
+  "decals": [
+    {
+      "layer": 8,
+      "bias": 100,
+      "noise_range": [
+        0,
+        1
+      ],
+      "pos_range": [
+        0,
+        0
+      ],
+      "elevation_range": [
+        -1,
+        1
+      ],
+      "scale": [
+        50,
+        50,
+        1
+      ],
+      "scale_variation": 0.1,
+      "count": 1,
+      "material_spec": "/pa/terrain/desert/decals/desert_sand_decal_02.json"
+    },
+    {
+      "layer": 10,
+      "bias": 100,
+      "noise_range": [
+        0.2,
+        0.6
+      ],
+      "pos_range": [
+        0,
+        0
+      ],
+      "elevation_range": [
+        -1,
+        1
+      ],
+      "scale": [
+        70,
+        70,
+        1
+      ],
+      "scale_variation": 0.3,
+      "count": 1,
+      "biome_distance_range": [
+        50,
+        null
+      ],
+      "material_spec": "/pa/terrain/desert/decals/desert_cracks_decal_01.json"
+    },
+    {
+      "layer": 11,
+      "bias": 100,
+      "noise_range": [
+        0.6,
+        0.9
+      ],
+      "pos_range": [
+        0,
+        0
+      ],
+      "elevation_range": [
+        -1,
+        1
+      ],
+      "scale": [
+        80,
+        80,
+        1
+      ],
+      "scale_variation": 0.3,
+      "count": 1,
+      "biome_distance_range": [
+        20,
+        50
+      ],
+      "material_spec": "/pa/terrain/desert/decals/desert_cracks_decal_02.json"
+    },
+    {
+      "layer": 9,
+      "bias": 200,
+      "noise_range": [
+        0,
+        1
+      ],
+      "pos_range": [
+        0.25,
+        0.25
+      ],
+      "elevation_range": [
+        -1,
+        1
+      ],
+      "scale": [
+        60,
+        60,
+        1
+      ],
+      "scale_variation": 0.2,
+      "count": 1,
+      "biome_distance_range": [
+        0,
+        5
+      ],
+      "material_spec": "/pa/terrain/desert/decals/desert_sand_decal_03.json"
+    }
+  ]
+}
