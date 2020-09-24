@@ -57,14 +57,14 @@
             ]
         },
         {
-            "spec": "/pa/terrain/grass/forest_low.json",
+            "spec": "/pa/terrain/jungle/jungle_2.json",
             "temperature": [
                 0.2,
                 1,
-                1
+                0.5
             ],
             "elevation": [
-                0,
+                0.7,
                 1,
                 1
             ],
@@ -133,9 +133,9 @@
     "enable_features": true,
     "atmosphere": {
         "color": [
-            0.1,
+            0.2,
             0.25,
-            0.45,
+            0.35,
             0.5
         ],
         "hdr_intensity": 2,
@@ -150,7 +150,7 @@
                 0.4
             ],
             "specular": [
-                0.2,
+                0.4,
                 0.2,
                 0.2
             ],
