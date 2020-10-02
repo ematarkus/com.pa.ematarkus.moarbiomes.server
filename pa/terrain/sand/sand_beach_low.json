@@ -11,12 +11,7 @@
     "layers": [
         {
             "note": "0",
-            "disable": true,
-            "noise": {
-                "scale": 2,
-                "zoom": 1.5,
-                "type": "simplex"
-            }
+            "disable": true
         },
         {
             "note": "1",
